@@ -7,7 +7,7 @@ CSV_PATH = "data/datos_clima_argentina.csv"
 
 # Configuración de BigQuery
 PROJECT_ID = "proyecto-clima-463015"
-DATASET_ID = "clima_dataset"
+DATASET_ID = "clima_argentina"
 TABLE_ID = "clima_diario"
 
 # Cargar el DataFrame
