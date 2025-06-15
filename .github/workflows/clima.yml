@@ -2,8 +2,8 @@ name: Clima Diario
 
 on:
   schedule:
-    - cron: '0 9 * * *'  # Ejecutar todos los días a las 9:00 UTC
-  workflow_dispatch:     # Permite ejecutarlo manualmente desde GitHub
+    - cron: '0 9 * * *'  # Todos los días a las 9:00 UTC (6:00 AM Argentina)
+  workflow_dispatch:       # Permite ejecutarlo manualmente desde GitHub
 
 jobs:
   clima:
@@ -32,9 +32,14 @@ jobs:
           python src/fetch_all_weather.py
 
       - name: Subir cambios
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "actions@github.com"
           git add data/datos_clima_argentina.csv
           git commit -m "Actualizar datos clima diaria [bot]" || echo "Sin cambios"
-          git push
+          git remote set-url origin https://x-access-token:${TOKEN}@github.com/${{ github.repository }}
+          git push origin HEAD:main
+
+          
