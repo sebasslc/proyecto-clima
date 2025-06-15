@@ -24,8 +24,8 @@ jobs:
           pip install -r requirements.txt
 
       - name: Crear archivo de credenciales GCP
-        run: |
-          printf "%b" "${{ secrets.GCP_CREDENTIALS_JSON }}" > gcp_key.json
+        run: echo '${{ secrets.GCP_CREDENTIALS_JSON }}' > gcp_key.json
+          
 
       - name: Setear GOOGLE_APPLICATION_CREDENTIALS
         run: echo "GOOGLE_APPLICATION_CREDENTIALS=gcp_key.json" >> $GITHUB_ENV
