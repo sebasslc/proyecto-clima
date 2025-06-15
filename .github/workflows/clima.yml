@@ -30,5 +30,8 @@ jobs:
       - name: Setear GOOGLE_APPLICATION_CREDENTIALS
         run: echo "GOOGLE_APPLICATION_CREDENTIALS=gcp_key.json" >> $GITHUB_ENV
 
+      - name: Ejecutar script para obtener clima
+        run: python src/fetch_all_weather.py
+
       - name: Ejecutar script de carga a BigQuery
         run: python src/upload_to_bigquery.py
