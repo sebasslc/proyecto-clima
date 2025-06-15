@@ -1,0 +1,27 @@
+ciudad,provincia,lat,lon,temperatura,humedad,clima,fecha,hora
+Buenos Aires,Buenos Aires,-34.6037,-58.3816,10.05,91,nubes,2025-06-14,22:02:13
+La Plata,Buenos Aires,-34.9214,-57.9544,9.49,88,nubes,2025-06-14,22:02:13
+Mar del Plata,Buenos Aires,-38.0055,-57.5426,10.57,84,cielo claro,2025-06-14,22:02:14
+Bahía Blanca,Buenos Aires,-38.7183,-62.2655,2.27,80,cielo claro,2025-06-14,22:02:15
+Córdoba,Córdoba,-31.4201,-64.1888,6.36,75,cielo claro,2025-06-14,22:02:15
+Rosario,Santa Fe,-32.9587,-60.6939,7.85,69,cielo claro,2025-06-14,22:02:15
+Santa Fe,Santa Fe,-31.6333,-60.7,9.96,88,cielo claro,2025-06-14,22:02:16
+Mendoza,Mendoza,-32.8908,-68.8272,8.74,57,cielo claro,2025-06-14,22:02:16
+San Miguel de Tucumán,Tucumán,-26.8167,-65.2167,9.95,93,cielo claro,2025-06-14,22:02:17
+Salta,Salta,-24.7829,-65.4232,10.87,85,nubes,2025-06-14,22:02:18
+San Salvador de Jujuy,Jujuy,-24.1858,-65.2995,10.74,75,nubes,2025-06-14,22:02:19
+Posadas,Misiones,-27.3671,-55.8961,16.99,77,nubes,2025-06-14,22:02:19
+Resistencia,Chaco,-27.4516,-58.9867,12.95,96,llovizna ligera,2025-06-14,22:02:19
+Corrientes,Corrientes,-27.4692,-58.8306,13.13,99,llovizna,2025-06-14,22:02:20
+Paraná,Entre Ríos,-31.7333,-60.5333,9.2,89,cielo claro,2025-06-14,22:02:20
+Santiago del Estero,Santiago del Estero,-27.7833,-64.2667,11.41,79,cielo claro,2025-06-14,22:02:21
+Formosa,Formosa,-26.1833,-58.1833,14.43,94,nubes,2025-06-14,22:02:22
+San Juan,San Juan,-31.5375,-68.5364,11.45,42,muy nuboso,2025-06-14,22:02:22
+San Luis,San Luis,-33.295,-66.3356,8.43,48,muy nuboso,2025-06-14,22:02:23
+Catamarca,Catamarca,-28.4696,-65.7852,13.21,63,cielo claro,2025-06-14,22:02:23
+La Rioja,La Rioja,-29.4131,-66.8558,11.38,55,algo de nubes,2025-06-14,22:02:24
+Neuquén,Neuquén,-38.9516,-68.0591,13.94,41,cielo claro,2025-06-14,22:02:24
+Viedma,Río Negro,-40.8135,-62.9967,8.26,53,muy nuboso,2025-06-14,22:02:25
+Rawson,Chubut,-43.3,-65.1,8.17,66,cielo claro,2025-06-14,22:02:25
+Río Gallegos,Santa Cruz,-51.6333,-69.2167,0.03,86,cielo claro,2025-06-14,22:02:26
+Ushuaia,Tierra del Fuego,-54.8,-68.3,3.81,87,lluvia ligera,2025-06-14,22:02:26
