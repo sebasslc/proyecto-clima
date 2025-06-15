@@ -1,34 +1,35 @@
+import os
 import pandas as pd
 from google.cloud import bigquery
-import os
 
-# Cargar el cliente de BigQuery con la clave JSON
+# Ruta al CSV generado (ajustar si cambia)
+CSV_PATH = "data/clima_hoy.csv"
+
+# Configuración de BigQuery
+PROJECT_ID = "proyecto-clima-463015"
+DATASET_ID = "clima_dataset"
+TABLE_ID = "clima_diario"
+
+# Cargar el DataFrame
+df = pd.read_csv(CSV_PATH)
+
+# Inicializar cliente de BigQuery usando la variable de entorno
 client = bigquery.Client()
 
-# Ruta del archivo CSV generado por el script de clima
-csv_path = "data/datos_clima_argentina.csv"
+# Definir el ID completo de la tabla
+table_ref = f"{PROJECT_ID}.{DATASET_ID}.{TABLE_ID}"
 
-# Leer los datos del CSV
-df = pd.read_csv(csv_path)
-
-# Definir ID del dataset y tabla
-project_id = "proyecto-clima-463015"
-dataset_id = "clima_argentina"
-table_id = "datos_diarios"
-full_table_id = f"{project_id}.{dataset_id}.{table_id}"
-
-# Configurar el esquema (opcional: BigQuery puede inferirlo)
+# Configuración de carga
 job_config = bigquery.LoadJobConfig(
-    write_disposition=bigquery.WriteDisposition.WRITE_TRUNCATE,  # reemplaza los datos cada vez
+    write_disposition=bigquery.WriteDisposition.WRITE_TRUNCATE,  # Reemplaza los datos
     autodetect=True,
     source_format=bigquery.SourceFormat.CSV,
-    skip_leading_rows=1,
 )
 
-# Cargar el archivo CSV a BigQuery
-with open(csv_path, "rb") as source_file:
-    job = client.load_table_from_file(source_file, full_table_id, job_config=job_config)
+# Subir datos a BigQuery
+with open(CSV_PATH, "rb") as source_file:
+    job = client.load_table_from_file(source_file, table_ref, job_config=job_config)
 
-job.result()  # Esperar a que termine
+job.result()  # Espera a que termine
 
-print(f"Datos cargados correctamente a {full_table_id}")
+print(f"✅ Carga completada. {job.output_rows} filas subidas a {table_ref}.")
