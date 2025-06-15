@@ -1,0 +1,87 @@
+ciudad,provincia,lat,lon
+Buenos Aires,Buenos Aires,-34.6037,-58.3816
+La Plata,Buenos Aires,-34.9214,-57.9544
+Mar del Plata,Buenos Aires,-38.0055,-57.5426
+Bahía Blanca,Buenos Aires,-38.7183,-62.2655
+Tandil,Buenos Aires,-37.3217,-59.1332
+Pergamino,Buenos Aires,-33.8917,-60.5728
+Junín,Buenos Aires,-34.5833,-60.95
+San Nicolás,Buenos Aires,-33.3333,-60.2167
+Avellaneda,Buenos Aires,-34.6592,-58.3644
+Quilmes,Buenos Aires,-34.7207,-58.2544
+Córdoba,Córdoba,-31.4201,-64.1888
+Villa María,Córdoba,-32.4075,-63.2412
+Río Cuarto,Córdoba,-33.1307,-64.3499
+Villa Carlos Paz,Córdoba,-31.4206,-64.4978
+Alta Gracia,Córdoba,-31.6606,-64.4283
+Jesús María,Córdoba,-30.9819,-64.0942
+San Francisco,Córdoba,-31.4275,-62.0827
+Cosquín,Córdoba,-31.2463,-64.4658
+Rosario,Santa Fe,-32.9587,-60.6939
+Santa Fe,Santa Fe,-31.6333,-60.7
+Rafaela,Santa Fe,-31.25,-61.5
+Venado Tuerto,Santa Fe,-33.7456,-61.9689
+Reconquista,Santa Fe,-29.15,-59.65
+Santo Tomé,Santa Fe,-31.65,-60.75
+Tucumán,Tucumán,-26.8167,-65.2167
+Yerba Buena,Tucumán,-26.8167,-65.3
+Concepción,Tucumán,-27.35,-65.6
+Salta,Salta,-24.7829,-65.4232
+Orán,Salta,-23.1328,-64.3242
+Tartagal,Salta,-22.5167,-63.8167
+Cafayate,Salta,-26.0725,-65.9764
+San Salvador de Jujuy,Jujuy,-24.1858,-65.2995
+Palpalá,Jujuy,-24.2561,-65.2111
+Tilcara,Jujuy,-23.5765,-65.3946
+Humahuaca,Jujuy,-23.2053,-65.3502
+Posadas,Misiones,-27.3671,-55.8961
+Oberá,Misiones,-27.4833,-55.1167
+Eldorado,Misiones,-26.4,-54.6333
+Puerto Iguazú,Misiones,-25.6,-54.5667
+Resistencia,Chaco,-27.4516,-58.9867
+Roque Sáenz Peña,Chaco,-26.7852,-60.4388
+Corrientes,Corrientes,-27.4692,-58.8306
+Goya,Corrientes,-29.1,-59.2667
+Mercedes,Corrientes,-29.1833,-58.0833
+Formosa,Formosa,-26.1833,-58.1833
+Clorinda,Formosa,-25.2833,-57.7167
+Catamarca,Catamarca,-28.4696,-65.7852
+Belén,Catamarca,-27.65,-67.0333
+Tinogasta,Catamarca,-28.0632,-67.5669
+La Rioja,La Rioja,-29.4131,-66.8558
+Chilecito,La Rioja,-29.1667,-67.5
+Chepes,La Rioja,-31.35,-66.5833
+San Juan,San Juan,-31.5375,-68.5364
+Rawson,San Juan,-31.6,-68.3
+Chimbas,San Juan,-31.5,-68.5
+Mendoza,Mendoza,-32.8908,-68.8272
+Godoy Cruz,Mendoza,-32.9167,-68.85
+San Rafael,Mendoza,-34.6,-68.3333
+San Luis,San Luis,-33.295,-66.3356
+Villa Mercedes,San Luis,-33.6757,-65.4623
+Merlo,San Luis,-32.35,-65.0167
+Santa Rosa,La Pampa,-36.6167,-64.2833
+General Pico,La Pampa,-35.65,-63.75
+Toay,La Pampa,-36.6833,-64.3
+Paraná,Entre Ríos,-31.7333,-60.5333
+Concordia,Entre Ríos,-31.4,-58.0167
+Gualeguaychú,Entre Ríos,-33.0,-58.5167
+Santiago del Estero,Santiago del Estero,-27.7833,-64.2667
+La Banda,Santiago del Estero,-27.7333,-64.2333
+Neuquén,Neuquén,-38.9516,-68.0591
+Cutral Có,Neuquén,-38.9333,-69.2333
+Zapala,Neuquén,-38.9,-70.0667
+Plottier,Neuquén,-38.9667,-68.2333
+Viedma,Río Negro,-40.8135,-62.9967
+General Roca,Río Negro,-39.0333,-67.5833
+Bariloche,Río Negro,-41.1335,-71.3103
+Cipolletti,Río Negro,-38.9333,-67.9833
+Trelew,Chubut,-43.25,-65.3
+Comodoro Rivadavia,Chubut,-45.8667,-67.5
+Puerto Madryn,Chubut,-42.7667,-65.0333
+Rawson,Chubut,-43.3,-65.1
+Río Gallegos,Santa Cruz,-51.6333,-69.2167
+Caleta Olivia,Santa Cruz,-46.45,-67.5167
+El Calafate,Santa Cruz,-50.3333,-72.2667
+Ushuaia,Tierra del Fuego,-54.8,-68.3
+Río Grande,Tierra del Fuego,-53.7833,-67.7
