@@ -1,9 +1,9 @@
-name: Clima Diario
+name: Clima Diario con BigQuery
 
 on:
   schedule:
-    - cron: '0 9 * * *'  # Todos los días a las 9:00 UTC (6:00 AM Argentina)
-  workflow_dispatch:       # Permite ejecutarlo manualmente desde GitHub
+    - cron: '0 9 * * *'  # Todos los días a las 9:00 UTC
+  workflow_dispatch:     # También se puede ejecutar manualmente
 
 jobs:
   clima:
@@ -22,24 +22,22 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+          pip install google-cloud-bigquery google-auth
 
       - name: Crear archivo .env
         run: |
           echo "OPENWEATHER_API_KEY=${{ secrets.OPENWEATHER_API_KEY }}" > .env
 
-      - name: Ejecutar script
+      - name: Ejecutar script Python
         run: |
           python src/fetch_all_weather.py
 
-      - name: Subir cambios
-        env:
-          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Crear archivo de credenciales GCP
         run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "actions@github.com"
-          git add data/datos_clima_argentina.csv
-          git commit -m "Actualizar datos clima diaria [bot]" || echo "Sin cambios"
-          git remote set-url origin https://x-access-token:${TOKEN}@github.com/${{ github.repository }}
-          git push origin HEAD:main
+          echo "${{ secrets.GCP_CREDENTIALS_JSON }}" > gcp_key.json
 
-          
+      - name: Subir CSV a BigQuery
+        env:
+          GOOGLE_APPLICATION_CREDENTIALS: ${{ github.workspace }}/gcp_key.json
+        run: |
+          python src/upload_to_bigquery.py
