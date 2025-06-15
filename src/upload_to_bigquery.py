@@ -3,7 +3,7 @@ import pandas as pd
 from google.cloud import bigquery
 
 # Ruta al CSV generado (ajustar si cambia)
-CSV_PATH = "data/clima_hoy.csv"
+CSV_PATH = "data/datos_clima_argentina.csv"
 
 # Configuración de BigQuery
 PROJECT_ID = "proyecto-clima-463015"
